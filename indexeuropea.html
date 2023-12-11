@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Panaderia Europea</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styleeuropea.css">
+    <link rel="shortcut icon" href="Europea.png">
+
+</head>
+<body>
+    <header>
+
+    </header>    
+    <nav class="container">
+        <form class="login-form">
+            <img src="Europea2.png" class="logo">
+            <button type="submit"><i class="fas fa-shopping-cart" style='color:#ffffff'></i>HACER UN PEDIDO</button>
+            </div>
+            <button type="submit"><i class="fa-solid fa-gift"></i>LISTA DE PRECIOS</button>
+            </div>
+            <form class="login-form">
+                <a href="https://wa.me/+54/3541338766" target="_blank">
+                    <button type="submit" onclick="redirectToWhatsApp(event)"><i class="fab fa-whatsapp"></i>CHAT POR WHATSAPP</button>
+                </a>
+            </form>
+            
+        </form>
+    </nav>
+    <script>
+        function redirectToWhatsApp(event) {
+            event.preventDefault();
+
+            var countryCode = '+54';
+            var phoneNumber = '3541338766';
+
+            var whatsappUrl = 'https://wa.me/' + countryCode + phoneNumber;
+
+            window.location.href = whatsappUrl;
+        }
+    </script>
+</body>
+</html>
